@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "dFVxMC7Vx3B+YTmR72fQCtzW2CliuL/DTIsqDd3POYQ=",
+  "Source": "CloudAssignment_BackEnd",
+  "BasePath": "_content/CloudAssignment_BackEnd",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
