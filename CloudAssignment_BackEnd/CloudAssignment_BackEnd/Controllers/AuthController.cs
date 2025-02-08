@@ -29,7 +29,7 @@ namespace CloudAssignment_BackEnd.Controllers
             var identityUser = new IdentityUser
             {
                 UserName = registerRequestDTO.Username,
-                Email = registerRequestDTO.Username,
+                Email = registerRequestDTO.Email,
                 PhoneNumber = registerRequestDTO.phoneNumber
             };
 
@@ -49,7 +49,7 @@ namespace CloudAssignment_BackEnd.Controllers
                     
                 }
             }
-            return BadRequest("Something Went Wrong");
+            return BadRequest("Username Has Been Used");
         }
 
         [HttpPost]

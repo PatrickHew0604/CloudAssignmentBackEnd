@@ -9,6 +9,9 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddHttpContextAccessor();
+
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -69,9 +72,14 @@ builder.Services.Configure<IdentityOptions>(
 builder.Services.AddDbContext<EConsultationIdentityDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("EConsultationDBAuthConnectionString")));
 
+builder.Services.AddDbContext<EConsultationDBContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("EConsultationDBConnectionString")));
+
 // For JWT Token Creation
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 
+// For Image Repository
+builder.Services.AddScoped<IImageRepository, LocalImageRepository>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CloudAssignment_BackEnd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59418b999af4b11b19377231da6a7fcbb34bb6f2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66cc31b530553e307224c5735136df5a68854c39")]
 [assembly: System.Reflection.AssemblyProductAttribute("CloudAssignment_BackEnd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CloudAssignment_BackEnd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

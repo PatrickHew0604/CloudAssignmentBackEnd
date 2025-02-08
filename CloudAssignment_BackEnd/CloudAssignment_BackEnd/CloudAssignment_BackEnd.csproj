@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Domain\" />
+    <Folder Include="Images\" />
   </ItemGroup>
 
 </Project>
